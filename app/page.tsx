@@ -197,6 +197,20 @@ export default function HomePage() {
             >
               Projects
             </Link>
+            <Link
+              href="/projects"
+              className="hover:text-stone-500 transition-colors"
+            >
+              Projects
+            </Link>
+            <Link
+              href="https://drive.google.com/file/d/1H8FWqDQ-jFYx54G3InZWVwXzmRtQ-aQI/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-stone-500 transition-colors"
+            >
+              Resume
+            </Link>
           </div>
         </div>
       </motion.nav>
@@ -420,9 +434,21 @@ export default function HomePage() {
         transition={{ duration: 0.8, delay: 1 }}
       >
         {[
-          { icon: Github, href: "#", label: "GitHub" },
-          { icon: Linkedin, href: "#", label: "LinkedIn" },
-          { icon: Mail, href: "#", label: "Email" },
+          {
+            icon: Github,
+            href: "https://github.com/aniketpatel4857",
+            label: "GitHub",
+          },
+          {
+            icon: Linkedin,
+            href: "https://www.linkedin.com/in/aniket-patel-969b93299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+            label: "LinkedIn",
+          },
+          {
+            icon: Mail,
+            href: "mailto:aniketpatel485772@gmail.com", // ✅ Use "mailto:" for email
+            label: "Email",
+          },
         ].map((social, index) => (
           <motion.a
             key={index}
